@@ -18,5 +18,9 @@ namespace recipes.Data
             : base(options)
         {
         }
+
+        public ApplicationDbContext()
+        {
+        }
     }
 }
