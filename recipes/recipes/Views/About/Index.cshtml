@@ -8,9 +8,13 @@
         <div class="row" style="margin-right: 0; margin-left: 0;">
             <div data-aos="fade-up" data-aos-duration="800">
                 <img src="/lib/bootstrap/dist/images/about-bg.jpg" alt="about-bg" class="thumbnail image">
-                <p>
-                    tting typesetting e indus
-                </p>
+                @foreach (var x in Model)
+            {
+            <p>
+                  @x.Detail;
+            </p>
+            }
+            
 
             </div>
         </div>

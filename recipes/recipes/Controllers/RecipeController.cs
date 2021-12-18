@@ -17,13 +17,14 @@ namespace recipes.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            var recipes = _db.Recipe.ToList();
+            return View(recipes);
         }
-
         public IActionResult RecipeDetail(int id)
         {
             var findRecipe = _db.Recipe.Where(x => x.Id == id).ToList();
             return View(findRecipe);
         }
+
     }
 }
