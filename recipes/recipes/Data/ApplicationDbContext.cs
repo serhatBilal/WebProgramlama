@@ -14,6 +14,8 @@ namespace recipes.Data
         public DbSet<Contact> Contact { get; set; }
         public DbSet<MainPage> MainPage { get; set; }
         public DbSet<Recipe> Recipe { get; set; }
+       
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {

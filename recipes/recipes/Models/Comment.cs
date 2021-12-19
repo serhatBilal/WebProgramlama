@@ -15,7 +15,7 @@ namespace recipes.Models
         public string UserComment { get; set; }
         public int RecipeId { get; set; }
         [ForeignKey("RecipeId")]
-        public Recipe Recipe { get; set; }
+        public virtual Recipe Recipe { get; set; }
 
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using recipes.Data;
 using recipes.Models;
 using System;
 using System.Collections.Generic;
@@ -11,19 +12,19 @@ namespace recipes.Controllers
 {
     public class HomeController : Controller
     {
-   
+
+        private readonly ApplicationDbContext _db;
+        public HomeController(ApplicationDbContext db)
+        {
+            _db = db;
+        }
         public IActionResult Index()
         {
-            return View();
+
+            var recipes = _db.Category.ToList();
+            return View(recipes);
         }
-        public IActionResult Recipes()
-        {
-            return View();
-        }
-        public IActionResult About()
-        {
-            return View();
-        }
+    
 
     }
 }

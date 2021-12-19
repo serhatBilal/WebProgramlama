@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "apmssQegnrpeAL3TaVTXejzFh/rVlKGtT1HaYHIGsdEf1jcGYSrXDgSwR7J4Qs5Lmo7rwKgvIhtEJVYYSpeVlA==",
+  "dgSpecHash": "LEersvMqcxzTXFV2T4Q0xzvPEmgw6hcl7xAI5xnTXlQRJv5tU2XeLraiF72Q8SzeLng9urNb9HbUDKPGm+azJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Serhat\\Desktop\\WebProgramlama-main\\WebProgramlama-main\\recipes\\recipes\\recipes.csproj",
+  "projectFilePath": "C:\\Users\\Serhat\\Desktop\\WebProgramlama\\recipes\\recipes\\recipes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Serhat\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Serhat\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",

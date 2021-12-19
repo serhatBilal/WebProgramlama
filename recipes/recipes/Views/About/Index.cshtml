@@ -3,20 +3,18 @@
 <!-- Banner section End-->
 <!-- About Section Start -->
 <div id="about-us">
-    <div class="container">
-        <h3>About us</h3>
-        <div class="row" style="margin-right: 0; margin-left: 0;">
-            <div data-aos="fade-up" data-aos-duration="800">
-                <img src="/lib/bootstrap/dist/images/about-bg.jpg" alt="about-bg" class="thumbnail image">
-                @foreach (var x in Model)
-            {
-            <p>
-                  @x.Detail;
-            </p>
-            }
-            
-
+    @foreach (var x in Model)
+    {
+        <div class="container">
+            <h3>@x.Title</h3>
+            <div class="row" style="margin-right: 0; margin-left: 0;">
+                <div data-aos="fade-up" data-aos-duration="800">
+                    <img src="/lib/bootstrap/dist/images/about-bg.jpg" alt="about-bg" class="thumbnail image">
+                    <p>
+                        @x.Detail;
+                    </p>
+                </div>
             </div>
         </div>
+    }
     </div>
-</div>

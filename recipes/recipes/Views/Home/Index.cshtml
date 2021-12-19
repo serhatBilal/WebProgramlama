@@ -1,33 +1,23 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
+﻿@model IEnumerable<recipes.Models.Category>
 <section class="banner-home">
-    <!-- Banner section Start-->
-    <!-- container Start-->
     <div class="container">
-        <!--Row Start-->
         <div class="row">
             <div class="col-sm-12">
-                <h1 data-aos="fade-left" data-aos-delay="300">welcome to feast</h1><br>
-                <h2 data-aos="fade-left" data-aos-delay="500">The food blog for hungry</h2>
-                <h4 data-aos="fade-left" data-aos-delay="700">One of the finest food and restaurant theme on the net, cleaniest and simplistic <span>wordpress theme, browse it and experience it</span></h4>
+                <h1 data-aos="fade-left" data-aos-delay="300">Yemek Tariflerine Hoşgeldiniz</h1><br>
+                <h2 data-aos="fade-left" data-aos-delay="500">Çok Lezzetli Yemek Tarifleri</h2>
+                <h4 data-aos="fade-left" data-aos-delay="700">İnternetteki en iyi yemek tarifleri <span>tariflere bir gözatıp deneyin </span></h4>
                 <p data-aos="fade-left" data-aos-delay="900">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i><span>204, Eastwood, Next to that building, 200034</span>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i><span>Yemektarifleri.com</span>
                 </p>
                 <p data-aos="fade-left" data-aos-delay="900">
-                    <i class="fa fa-clock-o" aria-hidden="true"></i><span>10:00 am - 11:00 pm</span>
-                    <i class="fa fa-phone" aria-hidden="true"></i><span>800 1234 5678</span>
+                    
+                <i class="fa fa-phone" aria-hidden="true"></i><span>0542 123 45 67</span>
                 </p>
-                <a class="btn btn-success" href="recipes.html" role="button" data-aos="fade-up" data-aos-delay="1000">check our food</a>
+                <a class="btn btn-success" href="recipes.html" role="button" data-aos="fade-up" data-aos-delay="1000">Tariflere Gözat</a>
             </div>
         </div>
-        <!--Row Ended-->
     </div>
-    <!-- container Ended-->
 </section>
-<!-- Banner section Ended-->
-<!-- Testimonial section -->
 <section class="testimonial">
     <div id="carousel">
         <div class="container">
@@ -35,38 +25,34 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="heading" data-aos="fade-up" data-aos-delay="300">
-                        <h2>People Just Love <span>Our Food</span></h2>
-                        <h3>One of the finest food and restaurant theme on the net, cleaniest and simplistic wordpress theme, browse it and experience it</h3>
+                        <h2>İnsanlar bizim tariflerimizi <span>Çoooook Seviyor</span></h2>
+                        <h3>İnternetteki en iyi yemek tarifleri</h3>
                     </div>
                 </div>
-
                 <div class="col-md-6 col1" data-aos="fade-right" data-aos-delay="500">
                     <i class="fa fa-angle-double-down" aria-hidden="true"></i>
                     <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
-                        <!-- Carousel items -->
                         <div class="carousel-inner" style="text-align: right">
                             <div class="active item">
                                 <blockquote>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+                                    <p>Sakarya üniversitesi Bilgisayar Mühendisliği Web Programlama Proje Ödevi</p>
                                 </blockquote>
-                                <div class="text1">Suzanne Smith <span>Australia</span></div>
+                                <div class="text1">Umut Sönmez <span>Bursa</span></div>
                                 <div class="profile-circle1" style="background-color: rgba(0,0,0,.2); float: right;"></div>
                             </div>
                         </div>
                     </div>
                     <i class="fa fa-angle-double-up" aria-hidden="true"></i>
                 </div>
-
                 <div class="col-md-6" data-aos="fade-left" data-aos-delay="500">
                     <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
-                        <!-- Carousel items -->
                         <div class="carousel-inner">
                             <div class="active item">
                                 <blockquote>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
+                                    <p>Sakarya üniversitesi Bilgisayar Mühendisliği Web Programlama Proje Ödevi</p>
                                 </blockquote>
                                 <div class="profile-circle2" style="background-color: rgba(0,0,0,.2);"></div>
-                                <div class="text2">Suzanne Smith <span>Australia</span></div>
+                                <div class="text2">Serhat BİLAL <span>Sakarya</span></div>
                             </div>
                         </div>
                     </div>
@@ -76,283 +62,29 @@
         </div>
     </div>
 </section>
-<!-- Testimonial section Ended-->
-<!-- About section Ended-->
-<section class="about">
-    <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-sm-12" data-aos="fade-right" data-aos-delay="300">
-                <a href="#" class="d-block">
-                    <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/about-bg.jpg" alt="about-bg">
-                </a>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div class="row" data-aos="fade-left" data-aos-delay="500">
-                    <div class="col-sm-12">
-                        <h2>About <span>Feast</span></h2>
-                        <p>One of the finest food and restaurant theme on the net, cleaniest and simplistic wordpress theme, browse it and experience it Lorem Ipsum is simply dummy text of the printing and typesetting </p>
-                        <p>Dummy text ever since the 1500s, when an unknown printer took a galley of type and</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="700">
-                        <ul>
-                            <li><i class="fa fa-bookmark-o" aria-hidden="true"></i><a href="about.html">Bakings</a> </li>
-                            <li><i class="fa fa-bookmark-o" aria-hidden="true"></i><a href="about.html">Breakfast</a> </li>
-                            <li><i class="fa fa-bookmark-o" aria-hidden="true"></i><a href="about.html">brunch</a> </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="800">
-                        <ul>
-                            <li><i class="fa fa-bookmark-o" aria-hidden="true"></i><a href="about.html">salads</a> </li>
-                            <li><i class="fa fa-bookmark-o" aria-hidden="true"></i><a href="about.html">recipes</a> </li>
-                            <li><i class="fa fa-bookmark-o" aria-hidden="true"></i><a href="about.html">sweets pizzas</a> </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="900">
-                        <ul>
-                            <li><i class="fa fa-bookmark-o" aria-hidden="true"></i><a href="about.html">Bakings</a> </li>
-                            <li><i class="fa fa-bookmark-o" aria-hidden="true"></i><a href="about.html">Breakfast</a> </li>
-                            <li><i class="fa fa-bookmark-o" aria-hidden="true"></i><a href="about.html">brunch</a> </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12" data-aos="fade-up" data-aos-delay="700">
-                        <a class="btn btn-primary" href="about.html" role="button">+ many more...</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.container -->
-</section>
-<!-- About section Ended-->
-<!-- Items section Ended-->
 <section class="items">
-    <!-- Page Content -->
     <div class="container">
         <div class="heading" data-aos="fade-up" data-aos-delay="300">
-            <h2>Check Out <span><a href="recipes.html">My Recipes</a></span> and Food Items</h2>
-            <h3>One of the finest food and restaurant theme on the net, cleaniest and simplistic wordpress theme, browse it and experience it</h3>
+            <h2>Lezzetli <span><a href="recipes.html">Tariflere</a></span> Gözat</h2>
+            <h3>İnternetteki en iyi yemek tarifleri burada yer almaktadır on binlerce tarif ve milyonlarca kullanıcı burada</h3>
         </div>
-
+       
         <div class="row text-center text-lg-left">
-
-            <div class="col-lg-3 col-md-4 col-6" data-aos="fade-left" data-aos-delay="300">
-                <div class="imageBox">
-                    <a href="/lib/bootstrap/dist/images/item-1.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/item-1.jpg" alt="">
-                        <div class="textBox">
-                            <h5>Sea Food</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6" data-aos="fade-left" data-aos-delay="500">
-                <div class="imageBox">
-                    <a href="/lib/bootstrap/dist/images/item-2.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/item-2.jpg" alt="">
-                        <div class="textBox">
-                            <h5>Main Dishes</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6" data-aos="fade-left" data-aos-delay="700">
-                <div class="imageBox">
-                    <a href="/lib/bootstrap/dist/images/item-3.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/item-3.jpg" alt="">
-                        <div class="textBox">
-                            <h5>Appetizers</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6" data-aos="fade-left" data-aos-delay="900">
-                <div class="imageBox">
-                    <a href="/lib/bootstrap/dist/images/item-4.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/item-4.jpg" alt="">
-                        <div class="textBox">
-                            <h5>Desserts</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6" data-aos="fade-right" data-aos-delay="300">
-                <div class="imageBox">
-                    <a href="/lib/bootstrap/dist/images/item-5.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/item-5.jpg" alt="">
-                        <div class="textBox">
-                            <h5>Drinks</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6" data-aos="fade-right" data-aos-delay="500">
-                <div class="imageBox">
-                    <a href="/lib/bootstrap/dist/images/item-6.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/item-6.jpg" alt="">
-                        <div class="textBox">
-                            <h5>Steak Food</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6" data-aos="fade-right" data-aos-delay="700">
-                <div class="imageBox">
-                    <a href="/lib/bootstrap/dist/images/item-7.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/item-7.jpg" alt="">
-                        <div class="textBox">
-                            <h5>Sea Food</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6" data-aos="fade-right" data-aos-delay="900">
-                <div class="imageBox">
-                    <a href="/lib/bootstrap/dist/images/item-8.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/item-8.jpg" alt="">
-                        <div class="textBox">
-                            <h5>Drinks</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6" data-aos="fade-left" data-aos-delay="300">
-                <div class="imageBox">
-                    <a href="/lib/bootstrap/dist/images/item-4.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/item-4.jpg" alt="">
-                        <div class="textBox">
-                            <h5>Desserts</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6" data-aos="fade-left" data-aos-delay="500">
-                <div class="imageBox">
-                    <a href="/lib/bootstrap/dist/images/item-2.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/item-2.jpg" alt="">
-                        <div class="textBox">
-                            <h5>Appetizers</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6" data-aos="fade-left" data-aos-delay="700">
-                <div class="imageBox">
-                    <a href="/lib/bootstrap/dist/images/item-3.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/item-3.jpg" alt="">
-                        <div class="textBox">
-                            <h5>Main Dishes</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6" data-aos="fade-left" data-aos-delay="900">
-                <div class="imageBox">
-                    <a href="/lib/bootstrap/dist/images/item-1.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/item-1.jpg" alt="">
-                        <div class="textBox">
-                            <h5>Other Food</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- /.container -->
-</section>
-<!-- Items section Ended-->
-<!-- Blog section Ended-->
-<section class="blog">
-    <div class="gradient"></div>
-    <!-- Page Content -->
-    <div class="container">
-        <div class="heading" data-aos="fade-up" data-aos-delay="300">
-            <h2>Read Food Articles</h2>
-            <h3>creative and awesome food articles </h3>
-        </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="500">
-            <div class="col-md-6 col-sm-12">
-                <div class="row">
-                    <div class="col-lg-5 col-sm-12">
-                        <a href="blog_single.html" class="d-block mb-5 h-100">
-                            <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/blog-1.jpg" alt="blog-1">
+            @foreach (var x in Model)
+            {
+                <div class="col-lg-3 col-md-4 col-6" data-aos="fade-left" data-aos-delay="900">
+                    <div class="imageBox">
+                        <a href="/lib/bootstrap/dist/images/item-1.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="example-gallery">
+                            <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/item-1.jpg" alt="">
+                            <div class="textBox">
+                                <h5>@x.Name</h5>
+                            </div>
                         </a>
                     </div>
-                    <div class="col-lg-7 col-sm-12 inner-content">
-                        <h5><a href="blog_single.html">Beautiful pamogranate cutted to taste for the Drink in cup</a></h5>
-                        <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of </h6>
-                    </div>
                 </div>
+            }
             </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="row">
-                    <div class="col-lg-5 col-sm-12">
-                        <a href="blog_single.html" class="d-block mb-5 h-100">
-                            <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/blog-2.jpg" alt="blog-2">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 inner-content">
-                        <h5><a href="blog_single.html">Beautiful pamogranate cutted to taste for the Drink in cup</a></h5>
-                        <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of </h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="row">
-                    <div class="col-lg-5 col-sm-12">
-                        <a href="blog_single.html" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/blog-3.jpg" alt="blog-3">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 inner-content">
-                        <h5><a href="blog_single.html">Beautiful pamogranate cutted to taste for the Drink in cup</a></h5>
-                        <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of </h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="row">
-                    <div class="col-lg-5 col-sm-12">
-                        <a href="blog_single.html" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/blog-4.jpg" alt="blog-4">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 inner-content">
-                        <h5><a href="blog_single.html">Beautiful pamogranate cutted to taste for the Drink in cup</a></h5>
-                        <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.container -->
-</section>
-<!-- Blog section Ended-->
-
-<section class="Subscribe">
-    <div class="container">
-        <!-- Grid row-->
-        <div class="row">
-            <!-- Grid column -->
-            <div class="col-lg-6 col-sm-6 col1">
-                <div class="heading" data-aos="fade-right" data-aos-delay="300">
-                    <h3>Do You Like Our Food?</h3>
-                    <h6>Subscribe for newsletter</h6>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-6 col1">
-                <form>
-                    <div class="input-group" data-aos="fade-left" data-aos-duration="800">
-                        <input name="email" id="email" type="email" placeholder="Enter your email id" required>
-                        <button class="btn btn-info" type="submit">Subscribe</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+        
     </div>
 </section>
+

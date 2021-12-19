@@ -20,10 +20,13 @@ namespace recipes.Controllers
             var recipes = _db.Recipe.ToList();
             return View(recipes);
         }
+        RecipeComment rc = new RecipeComment();
         public IActionResult RecipeDetail(int id)
         {
-            var findRecipe = _db.Recipe.Where(x => x.Id == id).ToList();
-            return View(findRecipe);
+            rc.Value1 = _db.Recipe.Where(x => x.Id == id).ToList();
+            rc.Value2 = _db.Comment.Where(x => x.RecipeId == id).ToList();
+
+            return View(rc);
         }
 
     }
