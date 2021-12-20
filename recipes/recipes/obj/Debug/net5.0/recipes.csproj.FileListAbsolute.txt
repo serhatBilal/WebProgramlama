@@ -490,6 +490,3 @@ C:\Users\Serhat\Desktop\WebProgramlama\recipes\recipes\obj\Debug\net5.0\recipes.
 C:\Users\Serhat\Desktop\WebProgramlama\recipes\recipes\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
 C:\Users\Serhat\Desktop\WebProgramlama\recipes\recipes\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
 C:\Users\Serhat\Desktop\WebProgramlama\recipes\recipes\obj\Debug\net5.0\Razor\Views\Admin\NewRecipe.cshtml.g.cs
-C:\Users\Serhat\Desktop\WebProgramlama\recipes\recipes\obj\Debug\net5.0\Razor\Views\Admin\GetRecipe.cshtml.g.cs
-C:\Users\Serhat\Desktop\WebProgramlama\recipes\recipes\obj\Debug\net5.0\Razor\Views\Recipe\AddComment.cshtml.g.cs
-C:\Users\Serhat\Desktop\WebProgramlama\recipes\recipes\obj\Debug\net5.0\Razor\Views\Login\Login.cshtml.g.cs
