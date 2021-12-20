@@ -487,3 +487,6 @@ C:\Users\Serhat\Desktop\WebProgramlama\recipes\recipes\obj\Debug\net5.0\recipes.
 C:\Users\Serhat\Desktop\WebProgramlama\recipes\recipes\obj\Debug\net5.0\ref\recipes.dll
 C:\Users\Serhat\Desktop\WebProgramlama\recipes\recipes\obj\Debug\net5.0\recipes.pdb
 C:\Users\Serhat\Desktop\WebProgramlama\recipes\recipes\obj\Debug\net5.0\recipes.genruntimeconfig.cache
+C:\Users\Serhat\Desktop\WebProgramlama\recipes\recipes\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Serhat\Desktop\WebProgramlama\recipes\recipes\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\Serhat\Desktop\WebProgramlama\recipes\recipes\obj\Debug\net5.0\Razor\Views\Admin\NewRecipe.cshtml.g.cs

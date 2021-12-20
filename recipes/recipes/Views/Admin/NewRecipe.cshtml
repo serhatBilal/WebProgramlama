@@ -1,0 +1,27 @@
+﻿@model recipes.Models.Recipe
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Tarif Ekleme</h2>
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.Name)
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Materials)
+    @Html.TextBoxFor(x => x.Materials, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Details)
+    @Html.TextBoxFor(x => x.Details, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.FoodImage)
+    @Html.TextBoxFor(x => x.FoodImage, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.CategoryId)
+    @Html.TextBoxFor(x => x.CategoryId, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Tarif Ekle</button>
+</form>
+
