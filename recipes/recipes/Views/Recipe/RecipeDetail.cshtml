@@ -2,20 +2,21 @@
 <section class="banner-home"></section>
 <div id="blog-single">
     <div class="container">
-        @foreach(var x in Model.Value1) {
-        <div class="heading">
-            <h2>@x.Name</h2>
-        </div>
-        <div class="row" data-aos="fade-up" data-aos-duration="700">
-            <div class="col-sm-12 col-lg-12 box">
-                <img src="/lib/bootstrap/dist/images/blog_single-bg.jpg" alt="" class="img-thumbnail image">
-                <p>@x.Materials </p>
-                <p>@x.Details</p>
-                
-                
+        @foreach (var x in Model.Value1)
+        {
+            <div class="heading">
+                <h2>@x.Name</h2>
             </div>
-        </div>
-        }    
+            <div class="row" data-aos="fade-up" data-aos-duration="700">
+                <div class="col-sm-12 col-lg-12 box">
+                    <img src="/lib/bootstrap/dist/images/blog_single-bg.jpg" alt="" class="img-thumbnail image">
+                    <p>@x.Materials </p>
+                    <p>@x.Details</p>
+
+
+                </div>
+            </div>
+        }
         <div class="post">
             <div class="row">
                 <div class="col-sm-12">
@@ -25,11 +26,11 @@
             <div class="row" data-aos="fade-up" data-aos-duration="800">
                 @foreach (var y in Model.Value2)
                 {
-                <div class="col-sm-6">
-                    <div class="col1">
-                        <p><strong>@y.Name <span>@y.Date</span></strong>@y.UserComment</p>
+                    <div class="col-sm-6">
+                        <div class="col1">
+                            <p><strong>@y.Name <span>@y.Date</span></strong>@y.UserComment</p>
+                        </div>
                     </div>
-                </div>
                 }
             </div>
         </div>
@@ -39,22 +40,7 @@
                     <button type="button" class="btn btn-primary" disabled>Yorum yaz</button>
                 </div>
             </div>
-            <form>
-                <div class="row" data-aos="fade-up" data-aos-duration="800">
-                    <div class="col-sm-6 col1">
-                        <input type="text" class="form-control" placeholder="Adınız" required>
-                    </div>
-                    <div class="col-sm-6 col1">
-                        <input type="email" class="form-control" placeholder="E-mail adresiniz" required>
-                    </div>
-                    <div class="col-sm-12 col1">
-                        <textarea class="form-control" name="message" placeholder="Yorum yaz" rows="8" required></textarea>
-                    </div>
-                    <div class="col-sm-12 col1">
-                        <button type="submit" class="btn btn-primary">Gönder</button>
-                    </div>
-                </div>
-            </form>
+                <partial name="~/Views/Recipe/AddComment.cshtml" />
         </div>
     </div>
 </div>

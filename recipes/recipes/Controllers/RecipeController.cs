@@ -28,6 +28,19 @@ namespace recipes.Controllers
 
             return View(rc);
         }
+        [HttpGet]
+        public PartialViewResult AddComment(int id)
+        {
+            ViewBag.deger = id;
+            return PartialView();
+        }
+        [HttpPost]
+      public PartialViewResult AddComment(Comment c)
+        {
+            _db.Comment.Add(c);
+            _db.SaveChanges();
+            return PartialView();
+        }
 
     }
 }
