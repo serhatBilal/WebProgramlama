@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using recipes.Models;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 namespace recipes.Controllers
 {
@@ -28,19 +29,32 @@ namespace recipes.Controllers
 
             return View(rc);
         }
+
+        public int RecipeId { get; set; }
+
+        [HttpPost]
+        public IActionResult AddComment(Comment cm)
+        {
+            
+            Comment comment = new Comment();
+            comment.UserComment = cm.UserComment;
+            comment.Name = cm.Name;
+            comment.Email = cm.Email;
+            comment.Date = cm.Date;
+            comment.RecipeId =cm.RecipeId;
+            _db.Comment.Add(comment);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
+
         [HttpGet]
-        public PartialViewResult AddComment(int id)
+        public IActionResult AddComment(int id)
         {
             ViewBag.deger = id;
-            return PartialView();
+            return View();
         }
-        [HttpPost]
-      public PartialViewResult AddComment(Comment c)
-        {
-            _db.Comment.Add(c);
-            _db.SaveChanges();
-            return PartialView();
-        }
+     
 
     }
 }

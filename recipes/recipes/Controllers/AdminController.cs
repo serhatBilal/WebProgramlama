@@ -34,5 +34,30 @@ namespace recipes.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
+        public IActionResult DeleteRecipe(int id)
+        {
+            var dr = _db.Recipe.Find(id);
+            _db.Recipe.Remove(dr);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public IActionResult GetRecipe(int id)
+        {
+            var rcp = _db.Recipe.Find(id);
+            return View("GetRecipe", rcp);
+        }
+        public IActionResult UpdateRecipe(Recipe r)
+        {
+            var urecipe  = _db.Recipe.Find(r.Id);
+            urecipe.Details = r.Details;
+            urecipe.Name = r.Name;
+            urecipe.Materials = r.Materials;
+            urecipe.FoodImage = r.FoodImage;
+            urecipe.CategoryId = r.CategoryId;
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+
+
+        }
     }
 }

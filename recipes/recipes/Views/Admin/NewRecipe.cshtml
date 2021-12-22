@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>Yeni Tarif Ekleme</h2>
+<h2>Yeni Tarif Ekleme Sayfası</h2>
 <br />
 <form class="form-group" method="post">
     @Html.LabelFor(x => x.Name)
@@ -14,11 +14,12 @@
     @Html.TextBoxFor(x => x.Materials, new { @class = "form-control" })
     <br />
     @Html.LabelFor(x => x.Details)
-    @Html.TextBoxFor(x => x.Details, new { @class = "form-control" })
+    @Html.TextAreaFor(x => x.Details,15,1, new { @class = "form-control" })
     <br />
     @Html.LabelFor(x => x.FoodImage)
     @Html.TextBoxFor(x => x.FoodImage, new { @class = "form-control" })
     <br />
+    <label>CategoryId: Makarna 1, Salata 2,....</label><br />
     @Html.LabelFor(x => x.CategoryId)
     @Html.TextBoxFor(x => x.CategoryId, new { @class = "form-control" })
     <br />
