@@ -24,7 +24,7 @@ namespace recipes.Controllers
             var recipes = _db.Category.ToList();
             return View(recipes);
         }
-    
+
 
     }
 }

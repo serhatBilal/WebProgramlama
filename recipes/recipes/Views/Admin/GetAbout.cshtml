@@ -1,0 +1,22 @@
+﻿@model IEnumerable<recipes.Models.About>
+@{ ViewData["Title"] = "GetAbout";
+                Layout = "~/Views/Shared/_AdminLayout.cshtml"; }
+
+<h2>Hakkımızda Listesi</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Başlık</th>
+        <th>Image URL</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+<tr>
+    <td>@x.Id</td>
+    <td>@x.Title</td>
+    <td>@x.ImageUrl</td>
+    <td>@x.Detail</td>
+    <td><a href="/Admin/CallAbout/@x.Id" class="btn btn-warning">Güncelle</a></td>
+</tr>}
+</table>

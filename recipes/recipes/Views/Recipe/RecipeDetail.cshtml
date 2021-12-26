@@ -2,20 +2,30 @@
 <section class="banner-home"></section>
 <div id="blog-single">
     <div class="container">
-        @foreach(var x in Model.Value1) {
-        <div class="heading">
-            <h2>@x.Name</h2>
-        </div>
-        <div class="row" data-aos="fade-up" data-aos-duration="700">
-            <div class="col-sm-12 col-lg-12 box">
-                <img src="/lib/bootstrap/dist/images/blog_single-bg.jpg" alt="" class="img-thumbnail image">
-                <p>@x.Materials </p>
-                <p>@x.Details</p>
-                
-                
-            </div>
-        </div>
-        }    
+        @foreach (var x in Model.Value1)
+        {
+
+<div class="heading">
+    <h2>@x.Name</h2>
+</div>
+
+                <div class="row" data-aos="fade-up" data-aos-duration="700">
+                    <div class="col-sm-12 col-lg-12">
+                        <img src="@x.FoodImage" alt="" class="rounded mx-auto d-block">
+                    </div>
+
+                </div><br /><h5>Malzemeler</h5><br />
+                                <div class="row">
+                                    <div class="col-12">
+                                        @x.Materials
+                                    </div>
+                                </div>
+                                <br /><br /><br />
+
+                 <div class=" row col-12" >
+                          <h5>Yapılışı</h5><br />
+                               <p class="text-break">@x.Details</p>
+                 </div>}
         <div class="post">
             <div class="row">
                 <div class="col-sm-12">
@@ -25,12 +35,11 @@
             <div class="row" data-aos="fade-up" data-aos-duration="800">
                 @foreach (var y in Model.Value2)
                 {
-                <div class="col-sm-6">
-                    <div class="col1">
-                        <p><strong>@y.Name <span>@y.Date</span></strong>@y.UserComment</p>
-                    </div>
-                </div>
-                }
+    <div class="col-sm-6">
+        <div class="col1">
+            <p><strong>@y.Name <span>@y.Date</span></strong>@y.UserComment</p>
+        </div>
+    </div>}
             </div>
         </div>
         <div class="comment-box">
@@ -39,16 +48,23 @@
                     <button type="button" class="btn btn-primary" disabled>Yorum yaz</button>
                 </div>
             </div>
-            <form>
+
+            <form asp-action="AddComment" asp-controller="Recipe" method="post">
                 <div class="row" data-aos="fade-up" data-aos-duration="800">
                     <div class="col-sm-6 col1">
-                        <input type="text" class="form-control" placeholder="Adınız" required>
+                        <input type="text" class="form-control" placeholder="Adınız" name="Name" required>
                     </div>
                     <div class="col-sm-6 col1">
-                        <input type="email" class="form-control" placeholder="E-mail adresiniz" required>
+                        <input type="email" class="form-control" placeholder="Mail adresiniz" name="Email" required>
+                    </div>
+                    <div class="col-sm-6 col1">
+                        <input type="text" class="form-control" placeholder="Tarih" name="Date" required>
                     </div>
                     <div class="col-sm-12 col1">
-                        <textarea class="form-control" name="message" placeholder="Yorum yaz" rows="8" required></textarea>
+                        <div class="col-sm-6 col1">
+                            <input type="text" class="form-control" placeholder="ID" name="RecipeId" value="@ViewBag.value" hidden required>
+                        </div>
+                        <textarea class="form-control" name="UserComment" placeholder="Yorumunuz" rows="8" required></textarea>
                     </div>
                     <div class="col-sm-12 col1">
                         <button type="submit" class="btn btn-primary">Gönder</button>
@@ -58,5 +74,3 @@
         </div>
     </div>
 </div>
-
-

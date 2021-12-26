@@ -5,16 +5,15 @@
 <div id="about-us">
     @foreach (var x in Model)
     {
-        <div class="container">
-            <h3>@x.Title</h3>
-            <div class="row" style="margin-right: 0; margin-left: 0;">
-                <div data-aos="fade-up" data-aos-duration="800">
-                    <img src="/lib/bootstrap/dist/images/about-bg.jpg" alt="about-bg" class="thumbnail image">
-                    <p>
-                        @x.Detail;
-                    </p>
-                </div>
-            </div>
+<div class="container">
+    <h3>@x.Title</h3>
+    <div class="row" style="margin-right: 0; margin-left: 0;">
+        <div data-aos="fade-up" data-aos-duration="800">
+            <img src="@x.ImageUrl" alt="about-bg" class="thumbnail image">
+            <p>
+                @x.Detail;
+            </p>
         </div>
-    }
     </div>
+</div>}
+</div>

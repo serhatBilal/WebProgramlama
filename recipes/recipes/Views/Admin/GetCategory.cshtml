@@ -1,0 +1,24 @@
+﻿@model IEnumerable<recipes.Models.Category>
+@{ ViewData["Title"] = "GetCategory";
+                Layout = "~/Views/Shared/_AdminLayout.cshtml"; }
+
+<h2>Kategori Listesi</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Kategori</th>
+        <th>Image URL</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+<tr>
+    <td>@x.Id</td>
+    <td>@x.Name</td>
+    <td>@x.ImageUrl</td>
+    <td><a href="/Admin/DeleteCategory/@x.Id" class="btn btn-danger">Sil</a></td>
+    <td><a href="/Admin/CallCategory/@x.Id" class="btn btn-warning">Güncelle</a></td>
+</tr>}
+
+</table>
+<a href='/Admin/NewCategory' class="btn btn-primary">Kategori Ekle</a>

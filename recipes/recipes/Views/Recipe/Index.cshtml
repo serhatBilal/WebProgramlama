@@ -11,22 +11,20 @@
             <h3>Birbirinden Lezzetli Binlerce Yemek Tarifleri </h3>
         </div>
         <div class="row">
-            @foreach(var x in Model) {
-            <div class="col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="300">
-                <div class="row">
-                    <div class="col-lg-5 col-sm-12">
-                        <a href="blog_single.html" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="/lib/bootstrap/dist/images/item-4.jpg" alt="blog-3">
-                        </a>
-                    </div>
-                    <div class="col-lg-7 col-sm-12 inner-content">
-                        <h5>@Html.ActionLink(@x.Name, "RecipeDetail", "Recipe", new { id = @x.Id })</h5>
-                        <h6>@x.Details </h6>
-                    </div>
-                </div>
-            </div>
-            }
+            @foreach (var x in Model)
+            {
+<div class="col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+    <div class="row">
+        <div class="col-lg-5 col-sm-12">
+            <a href="blog_single.html" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="@x.FoodImage" alt="blog-3">
+            </a>
+        </div>
+        <div class="col-lg-7 col-sm-12 inner-content d-flex align-content-center flex-wrap " style="color:green">
+            <h5>@Html.ActionLink(@x.Name, "RecipeDetail", "Recipe", new { id = @x.Id })</h5>
+        </div>
+    </div>
+</div>            }
         </div>
     </div>
 </section>
-
