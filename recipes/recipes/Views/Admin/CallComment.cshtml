@@ -1,0 +1,26 @@
+﻿@model recipes.Models.Comment
+@{
+    ViewData["Title"] = "CallComment";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Yorum Güncelleme Sayfası</h1>
+<br />
+
+<br />
+@using (Html.BeginForm("UpdateComment", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.Id)
+    @Html.TextBoxFor(x => x.Id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.Name)
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Email)
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.UserComment)
+    @Html.TextAreaFor(x => x.UserComment, 5, 1, new { @class = "form-control" })
+    <br/>
+    <button class="btn btn-success">Yorum Güncelle</button>
+}

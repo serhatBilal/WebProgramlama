@@ -1,0 +1,28 @@
+﻿@model IEnumerable<recipes.Models.Comment>
+@{ ViewData["Title"] = "GetComment";
+                Layout = "~/Views/Shared/_AdminLayout.cshtml"; }
+
+<h2>Yorumlar Listesi</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Kullanici</th>
+        <th>Mail</th>
+        <th>Yorum</th>
+        <th>Tarif Id</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+<tr>
+    <td>@x.Id</td>
+    <td>@x.Name</td>
+    <td>@x.Email</td>
+    <td>@x.UserComment</td>
+    <td>@x.RecipeId</td>
+    <td><a href="/Admin/DeleteComment/@x.Id" class="btn btn-danger">Sil</a></td>
+    <td><a href="/Admin/CallComment/@x.Id" class="btn btn-warning">Güncelle</a></td>
+</tr>            }
+</table>

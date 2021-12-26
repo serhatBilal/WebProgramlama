@@ -1,0 +1,26 @@
+﻿@model recipes.Models.About
+@{
+    ViewData["Title"] = "CallAbout";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Hakkımızda Güncelleme Sayfası</h1>
+<br />
+
+<br />
+@using (Html.BeginForm("UpdateAbout", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.Id)
+    @Html.TextBoxFor(x => x.Id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.Title)
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.ImageUrl)
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Detail)
+    @Html.TextAreaFor(x => x.Detail,15,1, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Hakkımızda Güncelle</button>
+}

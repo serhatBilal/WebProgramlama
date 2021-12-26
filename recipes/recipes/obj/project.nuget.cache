@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lOPZ1+gwmKGOWz3cEaklHI+/cGdpPDHdBEbfmiibV61rWpn4Dbfeq856Rl58ptExOmHhlO/FnqGLphrw9BbQqQ==",
+  "dgSpecHash": "YPL+8wbgfdG5iz1caBL+cjgPwou3PxAFmNR8HeaFnBr4SfN4HglC072Gqyp5xL3VaSrPF+JGJgOlkTzFHl+SeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Serhat\\Desktop\\WebProgramlama\\recipes\\recipes\\recipes.csproj",
+  "projectFilePath": "C:\\Users\\Serhat\\Desktop\\WebProgramlama-main\\WebProgramlama-main\\recipes\\recipes\\recipes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Serhat\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Serhat\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",

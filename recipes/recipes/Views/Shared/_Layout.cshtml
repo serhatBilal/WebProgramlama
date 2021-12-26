@@ -29,7 +29,10 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="/Home/Index">Anasayfa</a>
             <a href="/About/Index">Hakkımızda</a>
-            <a href="/Recipe/Index">Leziz Tarifler</a>
+            <a href="/AllRecipes/Index">Leziz Tarifler</a>
+            <a asp-area="Identity" asp-page="/Account/Login">Giriş Yap</a>
+            <a asp-area="Identity" asp-page="/Account/Register">Üye Ol</a>
+
         </div>
 
         <nav id="navbar">
@@ -59,6 +62,11 @@
             @RenderBody()
         </main>
     </div>
+
+
+
+
+
     <!-- Feature Recipe Section End -->
     <!-- Footer -->
     <footer class="page-footer font-small indigo">

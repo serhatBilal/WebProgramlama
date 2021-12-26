@@ -1,0 +1,68 @@
+﻿@page
+@model RegisterModel
+@{ ViewData["Title"] = "Yeni Hesap Oluştur"; }
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content=" Master  Login Form Widget Tab Form,Login Forms,Sign up Forms,Registration Forms,News letter Forms,Elements" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="~/lib/bootstrap/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="//fonts.googleapis.com/css?family=Cormorant+SC:300,400,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="padding-all">
+        <div style="width:500px; margin:0 auto;">
+            <h1 style="color:black">@ViewData["Title"]</h1>
+        </div>
+
+        <div class="design-w3l">
+            <div class="mail-form-agile">
+                <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                    <hr />
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Input.Email"></label>
+                        <input asp-for="Input.Email" class="form-control" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div><br/>
+                    <div class="form-group">
+                        <label asp-for="Input.Password"></label>
+                        <input asp-for="Input.Password" class="form-control" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div><br />
+                    <div class="form-group">
+                        <label asp-for="Input.ConfirmPassword"></label>
+                        <input asp-for="Input.ConfirmPassword" class="form-control" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div><br />
+                    <button type="submit" class="btn btn-primary">Üye Ol</button>
+                </form>
+
+
+            </div>
+            <div class="clear"> </div>
+        </div>
+
+        <div class="footer">
+            <p style="color:black">© 2021  Yemek Tarifleri. All Rights Reserved | Design by  <a href="https://yemektarifleri.com/">  Yemek Tarifleri </a></p>
+        </div>
+        @section Scripts {
+            <partial name="_ValidationScriptsPartial" />
+        }
+    </div>
+</body>
+</html>
+
+
+
+
+
+

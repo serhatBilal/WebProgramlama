@@ -9,7 +9,7 @@ namespace recipes.Models
     public class MainPage
     {
         public int Id { get; set; }
-        public int CategoryId { get; set;}
+        public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }
     }
