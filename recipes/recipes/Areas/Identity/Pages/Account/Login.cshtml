@@ -1,54 +1,33 @@
 ﻿@page
 @model LoginModel
 
-@{ ViewData["Title"] = "Giriş Yap"; }
-<!DOCTYPE html>
-    <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="keywords" content=" Master  Login Form Widget Tab Form,Login Forms,Sign up Forms,Registration Forms,News letter Forms,Elements" />
-        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-        <link href="~/lib/bootstrap/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="//fonts.googleapis.com/css?family=Cormorant+SC:300,400,500,600,700" rel="stylesheet">
-        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    </head>
-
-    <body>
-
-        <div class="padding-all">
+@{
+    ViewData["Title"] = "Giriş Yap";
+}
+<div class="row" style="width:500px; margin:0 auto;">
+    <div class="col-md-12 align-items-md-center">
+        <section>
             <div style="width:500px; margin:0 auto;">
-                <h1 style="color:black" >@ViewData["Title"]</h1>
+                <h1>@ViewData["Title"]</h1>
             </div>
-
-            <div class="design-w3l">
-                <div class="mail-form-agile">
-                    <form id="account" method="post">
-                        <div asp-validation-summary="All" class="text-danger">
-                            <div class="form-group">
-                                <label asp-for="Input.Email"></label>
-                                <input asp-for="Input.Email" class="form-control" />
-                                <span asp-validation-for="Input.Email" class="text-danger"></span>
-                            </div>
-                            <br />
-                            <div class="form-group">
-                                <label asp-for="Input.Password"></label><br />
-                                <input asp-for="Input.Password" class="form-control" />
-                                <span asp-validation-for="Input.Password" class="text-danger"></span>
-                            </div><br />
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Giriş Yap</button>
-                            </div>
-                        </div>
-                    </form>
+            <h3>Lütfen Hesap Bilgilerinizi giriniz!</h3>
+            <form id="account" method="post">
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Input.Email"></label>
+                    <input asp-for="Input.Email" class="form-control" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
                 </div>
-                <div class="clear"> </div>
-            </div>
-
-            <div class="footer">
-                <p style="color:black">© 2021  Yemek Tarifleri. All Rights Reserved | Design by  <a href="https://yemektarifleri.com/">  Yemek Tarifleri </a></p>
-            </div>
-        </div>
-    </body>
-    </html>
-
+                <div class="form-group">
+                    <label asp-for="Input.Password"></label>
+                    <input asp-for="Input.Password" class="form-control" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Giriş Yap</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    </div>

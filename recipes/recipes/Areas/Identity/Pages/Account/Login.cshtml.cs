@@ -14,11 +14,9 @@ using Microsoft.Extensions.Logging;
 
 namespace recipes.Areas.Identity.Pages.Account
 {
-
     [AllowAnonymous]
     public class LoginModel : PageModel
     {
-
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
@@ -87,8 +85,7 @@ namespace recipes.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    //return LocalRedirect("");
-                    return Redirect("/Admin/Index");
+                    return LocalRedirect(returnUrl);
                 }
                 if (result.RequiresTwoFactor)
                 {

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Serhat\\Desktop\\WebProgramlama-main\\WebProgramlama-main\\recipes\\recipes\\recipes.csproj": {}
+    "C:\\Users\\UMUT\\Desktop\\DENEME\\recipes\\recipes\\recipes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Serhat\\Desktop\\WebProgramlama-main\\WebProgramlama-main\\recipes\\recipes\\recipes.csproj": {
+    "C:\\Users\\UMUT\\Desktop\\DENEME\\recipes\\recipes\\recipes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Serhat\\Desktop\\WebProgramlama-main\\WebProgramlama-main\\recipes\\recipes\\recipes.csproj",
+        "projectUniqueName": "C:\\Users\\UMUT\\Desktop\\DENEME\\recipes\\recipes\\recipes.csproj",
         "projectName": "recipes",
-        "projectPath": "C:\\Users\\Serhat\\Desktop\\WebProgramlama-main\\WebProgramlama-main\\recipes\\recipes\\recipes.csproj",
-        "packagesPath": "C:\\Users\\Serhat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Serhat\\Desktop\\WebProgramlama-main\\WebProgramlama-main\\recipes\\recipes\\obj\\",
+        "projectPath": "C:\\Users\\UMUT\\Desktop\\DENEME\\recipes\\recipes\\recipes.csproj",
+        "packagesPath": "C:\\Users\\UMUT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\UMUT\\Desktop\\DENEME\\recipes\\recipes\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Serhat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\UMUT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -91,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
