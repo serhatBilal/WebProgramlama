@@ -1,6 +1,8 @@
 ﻿@model recipes.Models.Recipe
-@{ ViewData["Title"] = "Index";
-                Layout = "~/Views/Shared/_AdminLayout.cshtml"; }
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
 
 <h2>Yeni Tarif Ekleme Sayfası</h2>
 <br />
@@ -8,12 +10,11 @@
     @Html.LabelFor(x => x.Name)
     @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
     <br />
-
     @Html.LabelFor(x => x.Materials)
-    @Html.TextAreaFor(x => x.Materials, 15, 20, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.Materials, new { @class = "form-control" })
     <br />
     @Html.LabelFor(x => x.Details)
-    @Html.TextAreaFor(x => x.Details, 15, 20, new { @class = "form-control" })
+    @Html.TextAreaFor(x => x.Details,15,1, new { @class = "form-control" })
     <br />
     @Html.LabelFor(x => x.FoodImage)
     @Html.TextBoxFor(x => x.FoodImage, new { @class = "form-control" })
@@ -24,3 +25,4 @@
     <br />
     <button class="btn btn-primary">Tarif Ekle</button>
 </form>
+

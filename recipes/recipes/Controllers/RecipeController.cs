@@ -16,36 +16,45 @@ namespace recipes.Controllers
         {
             _db = db;
         }
-     
-        public IActionResult Index(int id)
+        public IActionResult Index()
         {
-            var find = _db.Recipe.Where(x => x.CategoryId == id).ToList();
-            return View(find);
+            var recipes = _db.Recipe.ToList();
+            return View(recipes);
         }
         RecipeComment rc = new RecipeComment();
         public IActionResult RecipeDetail(int id)
         {
             rc.Value1 = _db.Recipe.Where(x => x.Id == id).ToList();
             rc.Value2 = _db.Comment.Where(x => x.RecipeId == id).ToList();
-            ViewBag.value = id;
+
             return View(rc);
         }
+
+        public int RecipeId { get; set; }
 
         [HttpPost]
         public IActionResult AddComment(Comment cm)
         {
-
+            
             Comment comment = new Comment();
             comment.UserComment = cm.UserComment;
             comment.Name = cm.Name;
             comment.Email = cm.Email;
             comment.Date = cm.Date;
-            comment.RecipeId = cm.RecipeId;
+            comment.RecipeId =cm.RecipeId;
             _db.Comment.Add(comment);
             _db.SaveChanges();
             return RedirectToAction("Index");
+
         }
 
+        [HttpGet]
+        public IActionResult AddComment(int id)
+        {
+            ViewBag.deger = id;
+            return View();
+        }
+     
 
     }
 }
